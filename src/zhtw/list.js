@@ -1,4 +1,4 @@
-module.exports = [
+export default [
   '不丹',
   '東帝汶',
   '中國',

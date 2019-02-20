@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   AD: 'Andorra',
   AE: 'Vereinigte Arabische Emirate',
   AF: 'Afghanistan',

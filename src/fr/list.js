@@ -1,4 +1,4 @@
-module.exports = [
+export default [
   'Afghanistan',
   'Afrique du Sud',
   'Albanie',
@@ -52,7 +52,7 @@ module.exports = [
   'Croatie',
   'Cuba',
   'Curaçao',
-  'Côte d'Ivoire',
+  'Côte d\'Ivoire',
   'Danemark',
   'Djibouti',
   'Dominique',
@@ -203,7 +203,7 @@ module.exports = [
   'Taïwan',
   'Tchad',
   'Terres australes françaises',
-  'Territoire britannique de l'océan Indien',
+  'Territoire britannique de l\'océan Indien',
   'Territoire palestinien',
   'Thaïlande',
   'Timor Oriental',

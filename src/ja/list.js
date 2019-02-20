@@ -1,4 +1,4 @@
-module.exports = [
+export default [
   'アイスランド共和国',
   'アイルランド',
   'アゼルバイジャン共和国',

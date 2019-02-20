@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   AD: 'Andorre',
   AE: 'Émirats Arabes Unis',
   AF: 'Afghanistan',
@@ -42,7 +42,7 @@ module.exports = {
   CF: 'Centrafrique',
   CG: 'Congo-Brazzaville',
   CH: 'Suisse',
-  CI: 'Côte d'Ivoire',
+  CI: 'Côte d\'Ivoire',
   CK: 'Îles Cook',
   CL: 'Chili',
   CM: 'Cameroun',
@@ -104,7 +104,7 @@ module.exports = {
   IL: 'Israël',
   IM: 'Île de Man',
   IN: 'Inde',
-  IO: 'Territoire britannique de l'océan Indien',
+  IO: 'Territoire britannique de l\'océan Indien',
   IQ: 'Irak',
   IR: 'Iran',
   IS: 'Islande',
