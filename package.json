@@ -2,12 +2,31 @@
   "name": "country-list",
   "version": "1.0.0",
   "description": "Country list and its IOS country code mappings.",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "repository": "https://github.com/jackytck/country-list",
-	"bugs": {
+  "bugs": {
     "url": "https://github.com/jackytck/country-list/issues"
+  },
+  "scripts": {
+    "build": "babel src --out-dir lib",
+    "prepublish": "yarn run build",
+		"lint": "eslint src/**/*.js",
+		"test": "yarn lint"
   },
   "author": "Jacky Tang",
   "license": "MIT",
-  "private": false
+  "private": false,
+	"devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-istanbul": "^5.1.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.13.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0"
+  }
 }
