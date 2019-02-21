@@ -1,11 +1,11 @@
 {
-  "name": "country-list",
+  "name": "freegeoip-country-list",
   "version": "1.0.0",
-  "description": "Country list and its IOS country code mappings.",
+  "description": "Country list and its IOS country code mappings used in freegeoip.",
   "main": "lib/index.js",
-  "repository": "https://github.com/jackytck/country-list",
+  "repository": "https://github.com/jackytck/freegeoip-country-list",
   "bugs": {
-    "url": "https://github.com/jackytck/country-list/issues"
+    "url": "https://github.com/jackytck/freegeoip-country-list/issues"
   },
   "scripts": {
     "build": "babel src --out-dir lib",
