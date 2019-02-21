@@ -1,26 +1,115 @@
-export { default as DEList } from './de/list'
-export { default as DEMap } from './de/map'
+import codeListDE from './de/map'
+import codeListEN from './en/map'
+import codeListES from './es/map'
+import codeListFR from './fr/map'
+import codeListJA from './ja/map'
+import codeListPTBR from './ptbr/map'
+import codeListRU from './ru/map'
+import codeListZHCN from './zhcn/map'
+import codeListZHTW from './zhtw/map'
+import namesDE from './de/list'
+import namesEN from './en/list'
+import namesES from './es/list'
+import namesFR from './fr/list'
+import namesJA from './ja/list'
+import namesPTBR from './ptbr/list'
+import namesRU from './ru/list'
+import namesZHCN from './zhcn/list'
+import namesZHTW from './zhtw/list'
 
-export { default as ENList } from './en/list'
-export { default as ENMap } from './en/map'
+function getNameList (locale = 'EN') {
+  const loc = locale.toUpperCase()
+  switch (loc) {
+    case 'DE':
+      return namesDE
+    case 'EN':
+      return namesEN
+    case 'ES':
+      return namesES
+    case 'FR':
+      return namesFR
+    case 'JA':
+      return namesJA
+    case 'PTBR':
+      return namesPTBR
+    case 'RU':
+      return namesRU
+    case 'ZHCN':
+      return namesZHCN
+    case 'ZHTW':
+      return namesZHTW
+  }
+}
 
-export { default as ESList } from './es/list'
-export { default as ESMap } from './es/map'
+function getName (code, locale = 'EN') {
+  const loc = locale.toUpperCase()
+  const c = code.toUpperCase()
+  switch (loc) {
+    case 'DE':
+      return codeListDE[c]
+    case 'EN':
+      return codeListEN[c]
+    case 'ES':
+      return codeListES[c]
+    case 'FR':
+      return codeListFR[c]
+    case 'JA':
+      return codeListJA[c]
+    case 'PTBR':
+      return codeListPTBR[c]
+    case 'RU':
+      return codeListRU[c]
+    case 'ZHCN':
+      return codeListZHCN[c]
+    case 'ZHTW':
+      return codeListZHTW[c]
+  }
+}
 
-export { default as FRList } from './fr/list'
-export { default as FRMap } from './fr/map'
+function getCodeList (locale = 'EN') {
+  const loc = locale.toUpperCase()
+  switch (loc) {
+    case 'DE':
+      return codeListDE
+    case 'EN':
+      return codeListEN
+    case 'ES':
+      return codeListES
+    case 'FR':
+      return codeListFR
+    case 'JA':
+      return codeListJA
+    case 'PTBR':
+      return codeListPTBR
+    case 'RU':
+      return codeListRU
+    case 'ZHCN':
+      return codeListZHCN
+    case 'ZHTW':
+      return codeListZHTW
+  }
+}
 
-export { default as JAList } from './ja/list'
-export { default as JAMap } from './ja/map'
-
-export { default as PTBRList } from './ptbr/list'
-export { default as PTBRMap } from './ptbr/map'
-
-export { default as RUList } from './ru/list'
-export { default as RUMap } from './ru/map'
-
-export { default as ZHCNList } from './zhcn/list'
-export { default as ZHCNMap } from './zhcn/map'
-
-export { default as ZHTWList } from './zhtw/list'
-export { default as ZHTWMap } from './zhtw/map'
+export {
+  codeListDE,
+  codeListEN,
+  codeListES,
+  codeListFR,
+  codeListJA,
+  codeListPTBR,
+  codeListRU,
+  codeListZHCN,
+  codeListZHTW,
+  getCodeList,
+  getName,
+  getNameList,
+  namesDE,
+  namesEN,
+  namesES,
+  namesFR,
+  namesJA,
+  namesPTBR,
+  namesRU,
+  namesZHCN,
+  namesZHTW
+}
