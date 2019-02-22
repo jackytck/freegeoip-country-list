@@ -1,4 +1,4 @@
-export default {
+export default () => ({
   AD: 'Andorra',
   AE: 'United Arab Emirates',
   AF: 'Afghanistan',
@@ -13,7 +13,7 @@ export default {
   AT: 'Austria',
   AU: 'Australia',
   AW: 'Aruba',
-  AX: 'Åland',
+  AX: 'Aland',
   AZ: 'Azerbaijan',
   BA: 'Bosnia and Herzegovina',
   BB: 'Barbados',
@@ -24,7 +24,7 @@ export default {
   BH: 'Bahrain',
   BI: 'Burundi',
   BJ: 'Benin',
-  BL: 'Saint Barthélemy',
+  BL: 'Saint Barthelemy',
   BM: 'Bermuda',
   BN: 'Brunei',
   BO: 'Bolivia',
@@ -51,7 +51,7 @@ export default {
   CR: 'Costa Rica',
   CU: 'Cuba',
   CV: 'Cabo Verde',
-  CW: 'Curaçao',
+  CW: 'Curacao',
   CX: 'Christmas Island',
   CY: 'Cyprus',
   CZ: 'Czechia',
@@ -186,7 +186,7 @@ export default {
   PW: 'Palau',
   PY: 'Paraguay',
   QA: 'Qatar',
-  RE: 'Réunion',
+  RE: 'Reunion',
   RO: 'Romania',
   RS: 'Serbia',
   RU: 'Russia',
@@ -207,7 +207,7 @@ export default {
   SO: 'Somalia',
   SR: 'Suriname',
   SS: 'South Sudan',
-  ST: 'São Tomé and Príncipe',
+  ST: 'Sao Tome and Principe',
   SV: 'El Salvador',
   SX: 'Sint Maarten',
   SY: 'Syria',
@@ -249,4 +249,4 @@ export default {
   ZA: 'South Africa',
   ZM: 'Zambia',
   ZW: 'Zimbabwe'
-}
+})

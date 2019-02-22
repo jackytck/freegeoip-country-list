@@ -1,4 +1,4 @@
-export default {
+export default () => ({
   AD: '安道尔',
   AE: '阿拉伯联合酋长国',
   AF: '阿富汗',
@@ -249,4 +249,4 @@ export default {
   ZA: '南非',
   ZM: '赞比亚',
   ZW: '津巴布韦'
-}
+})

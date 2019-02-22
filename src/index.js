@@ -1,115 +1,191 @@
-import codeListDE from './de/map'
-import codeListEN from './en/map'
-import codeListES from './es/map'
-import codeListFR from './fr/map'
-import codeListJA from './ja/map'
-import codeListPTBR from './ptbr/map'
-import codeListRU from './ru/map'
-import codeListZHCN from './zhcn/map'
-import codeListZHTW from './zhtw/map'
-import namesDE from './de/list'
-import namesEN from './en/list'
-import namesES from './es/list'
-import namesFR from './fr/list'
-import namesJA from './ja/list'
-import namesPTBR from './ptbr/list'
-import namesRU from './ru/list'
-import namesZHCN from './zhcn/list'
-import namesZHTW from './zhtw/list'
+import getCodeListDE from './de/map-code-name'
+import getCodeListEN from './en/map-code-name'
+import getCodeListES from './es/map-code-name'
+import getCodeListFR from './fr/map-code-name'
+import getCodeListJA from './ja/map-code-name'
+import getCodeListPTBR from './ptbr/map-code-name'
+import getCodeListRU from './ru/map-code-name'
+import getCodeListZHCN from './zhcn/map-code-name'
+import getCodeListZHTW from './zhtw/map-code-name'
+import getCodes from './codes'
+import getNameListDE from './de/map-name-code'
+import getNameListEN from './en/map-name-code'
+import getNameListES from './es/map-name-code'
+import getNameListFR from './fr/map-name-code'
+import getNameListJA from './ja/map-name-code'
+import getNameListPTBR from './ptbr/map-name-code'
+import getNameListRU from './ru/map-name-code'
+import getNameListZHCN from './zhcn/map-name-code'
+import getNameListZHTW from './zhtw/map-name-code'
+import getNamesDE from './de/names'
+import getNamesEN from './en/names'
+import getNamesES from './es/names'
+import getNamesFR from './fr/names'
+import getNamesJA from './ja/names'
+import getNamesPTBR from './ptbr/names'
+import getNamesRU from './ru/names'
+import getNamesZHCN from './zhcn/names'
+import getNamesZHTW from './zhtw/names'
 
-function getNameList (locale = 'EN') {
-  const loc = locale.toUpperCase()
-  switch (loc) {
-    case 'DE':
-      return namesDE
-    case 'EN':
-      return namesEN
-    case 'ES':
-      return namesES
-    case 'FR':
-      return namesFR
-    case 'JA':
-      return namesJA
-    case 'PTBR':
-      return namesPTBR
-    case 'RU':
-      return namesRU
-    case 'ZHCN':
-      return namesZHCN
-    case 'ZHTW':
-      return namesZHTW
-  }
-}
-
+// getName returns the name for that country from the 2-digits country code.
 function getName (code, locale = 'EN') {
   const loc = locale.toUpperCase()
   const c = code.toUpperCase()
   switch (loc) {
     case 'DE':
-      return codeListDE[c]
+      return getCodeListDE()[c]
     case 'EN':
-      return codeListEN[c]
+      return getCodeListEN()[c]
     case 'ES':
-      return codeListES[c]
+      return getCodeListES()[c]
     case 'FR':
-      return codeListFR[c]
+      return getCodeListFR()[c]
     case 'JA':
-      return codeListJA[c]
+      return getCodeListJA()[c]
     case 'PTBR':
-      return codeListPTBR[c]
+      return getCodeListPTBR()[c]
     case 'RU':
-      return codeListRU[c]
+      return getCodeListRU()[c]
     case 'ZHCN':
-      return codeListZHCN[c]
+      return getCodeListZHCN()[c]
     case 'ZHTW':
-      return codeListZHTW[c]
+      return getCodeListZHTW()[c]
   }
 }
 
+// getCode returns the code for that country given the country name.
+function getCode (name, locale = 'EN') {
+  const loc = locale.toUpperCase()
+  const n = name.toUpperCase()
+  switch (loc) {
+    case 'DE':
+      return getNameListDE()[n]
+    case 'EN':
+      return getNameListEN()[n]
+    case 'ES':
+      return getNameListES()[n]
+    case 'FR':
+      return getNameListFR()[n]
+    case 'JA':
+      return getNameListJA()[n]
+    case 'PTBR':
+      return getNameListPTBR()[n]
+    case 'RU':
+      return getNameListRU()[n]
+    case 'ZHCN':
+      return getNameListZHCN()[n]
+    case 'ZHTW':
+      return getNameListZHTW()[n]
+  }
+}
+
+// getNames returns an array of all country names.
+function getNames (locale = 'EN') {
+  const loc = locale.toUpperCase()
+  switch (loc) {
+    case 'DE':
+      return getNamesDE()
+    case 'EN':
+      return getNamesEN()
+    case 'ES':
+      return getNamesES()
+    case 'FR':
+      return getNamesFR()
+    case 'JA':
+      return getNamesJA()
+    case 'PTBR':
+      return getNamesPTBR()
+    case 'RU':
+      return getNamesRU()
+    case 'ZHCN':
+      return getNamesZHCN()
+    case 'ZHTW':
+      return getNamesZHTW()
+  }
+}
+
+// getNameList returns a key-value object of all countries using the name as key.
+function getNameList (locale = 'EN') {
+  const loc = locale.toUpperCase()
+  switch (loc) {
+    case 'DE':
+      return getNameListDE()
+    case 'EN':
+      return getNameListEN()
+    case 'ES':
+      return getNameListES()
+    case 'FR':
+      return getNameListFR()
+    case 'JA':
+      return getNameListJA()
+    case 'PTBR':
+      return getNameListPTBR()
+    case 'RU':
+      return getNameListRU()
+    case 'ZHCN':
+      return getNameListZHCN()
+    case 'ZHTW':
+      return getNameListZHTW()
+  }
+}
+
+// getCodeList returns a key-value object of all countries using the code as key.
 function getCodeList (locale = 'EN') {
   const loc = locale.toUpperCase()
   switch (loc) {
     case 'DE':
-      return codeListDE
+      return getCodeListDE()
     case 'EN':
-      return codeListEN
+      return getCodeListEN()
     case 'ES':
-      return codeListES
+      return getCodeListES()
     case 'FR':
-      return codeListFR
+      return getCodeListFR()
     case 'JA':
-      return codeListJA
+      return getCodeListJA()
     case 'PTBR':
-      return codeListPTBR
+      return getCodeListPTBR()
     case 'RU':
-      return codeListRU
+      return getCodeListRU()
     case 'ZHCN':
-      return codeListZHCN
+      return getCodeListZHCN()
     case 'ZHTW':
-      return codeListZHTW
+      return getCodeListZHTW()
   }
 }
 
 export {
-  codeListDE,
-  codeListEN,
-  codeListES,
-  codeListFR,
-  codeListJA,
-  codeListPTBR,
-  codeListRU,
-  codeListZHCN,
-  codeListZHTW,
   getCodeList,
+  getCodeListDE,
+  getCodeListEN,
+  getCodeListES,
+  getCodeListFR,
+  getCodeListJA,
+  getCodeListPTBR,
+  getCodeListRU,
+  getCodeListZHCN,
+  getCodeListZHTW,
+  getCode,
+  getCodes,
   getName,
   getNameList,
-  namesDE,
-  namesEN,
-  namesES,
-  namesFR,
-  namesJA,
-  namesPTBR,
-  namesRU,
-  namesZHCN,
-  namesZHTW
+  getNameListDE,
+  getNameListEN,
+  getNameListES,
+  getNameListFR,
+  getNameListJA,
+  getNameListPTBR,
+  getNameListRU,
+  getNameListZHCN,
+  getNameListZHTW,
+  getNames,
+  getNamesDE,
+  getNamesEN,
+  getNamesES,
+  getNamesFR,
+  getNamesJA,
+  getNamesPTBR,
+  getNamesRU,
+  getNamesZHCN,
+  getNamesZHTW
 }

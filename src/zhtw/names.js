@@ -1,4 +1,4 @@
-export default [
+export default () => ([
   '不丹',
   '東帝汶',
   '中國',
@@ -249,4 +249,4 @@ export default [
   '馬里',
   '黎巴嫩',
   '黑山共和國'
-]
+])

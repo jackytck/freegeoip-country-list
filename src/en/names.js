@@ -1,5 +1,6 @@
-export default [
+export default () => ([
   'Afghanistan',
+  'Aland',
   'Albania',
   'Algeria',
   'American Samoa',
@@ -54,7 +55,7 @@ export default [
   'Costa Rica',
   'Croatia',
   'Cuba',
-  'Curaçao',
+  'Curacao',
   'Cyprus',
   'Czechia',
   'Democratic Republic of Timor-Leste',
@@ -180,11 +181,11 @@ export default [
   'Republic of Lithuania',
   'Republic of Moldova',
   'Republic of the Congo',
+  'Reunion',
   'Romania',
   'Russia',
   'Rwanda',
-  'Réunion',
-  'Saint Barthélemy',
+  'Saint Barthelemy',
   'Saint Helena',
   'Saint Lucia',
   'Saint Martin',
@@ -192,6 +193,7 @@ export default [
   'Saint Vincent and the Grenadines',
   'Samoa',
   'San Marino',
+  'Sao Tome and Principe',
   'Saudi Arabia',
   'Senegal',
   'Serbia',
@@ -216,7 +218,6 @@ export default [
   'Sweden',
   'Switzerland',
   'Syria',
-  'São Tomé and Príncipe',
   'Taiwan',
   'Tajikistan',
   'Tanzania',
@@ -247,6 +248,5 @@ export default [
   'Western Sahara',
   'Yemen',
   'Zambia',
-  'Zimbabwe',
-  'Åland'
-]
+  'Zimbabwe'
+])
