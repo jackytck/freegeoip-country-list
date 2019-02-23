@@ -208,7 +208,7 @@ export default () => ([
   'Sao Bartolomeu',
   'Sao Cristovao e Nevis',
   'Sao Martinho',
-  'Sao Martinho',
+  'Sao Martinho2',
   'Sao Vincente e Granadinas',
   'Senegal',
   'Serra Leoa',

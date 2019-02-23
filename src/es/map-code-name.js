@@ -209,7 +209,7 @@ export default () => ({
   SS: 'Sudan del Sur',
   ST: 'Santo Tome y Principe',
   SV: 'El Salvador',
-  SX: 'San Martin',
+  SX: 'San Martin2',
   SY: 'Siria',
   SZ: 'Suazilandia',
   TC: 'Islas Turcas y Caicos',

@@ -199,7 +199,7 @@ export default () => ({
   'San Cristobal y Nieves': 'KN',
   'San Marino': 'SM',
   'San Martin': 'MF',
-  'San Martin': 'SX',
+  'San Martin2': 'SX',
   'San Pedro y Miquelon': 'PM',
   'San Vicente y las Granadinas': 'VC',
   'Santa Elena': 'SH',

@@ -196,7 +196,7 @@ export default () => ([
   'Saint-Christophe-et-Nieves',
   'Saint-Marin',
   'Saint-Martin',
-  'Saint-Martin',
+  'Saint-Martin2',
   'Saint-Pierre et Miquelon',
   'Saint-Vincent-et-les-Grenadines',
   'Sainte-Helene',
