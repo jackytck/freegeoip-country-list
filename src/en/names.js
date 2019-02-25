@@ -47,7 +47,7 @@ export default () => ([
   'Chile',
   'China',
   'Christmas Island',
-  'Cocos [Keeling] Islands',
+  'Cocos Keeling Islands',
   'Colombia',
   'Comoros',
   'Congo',

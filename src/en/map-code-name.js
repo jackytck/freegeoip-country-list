@@ -37,7 +37,7 @@ export default () => ({
   BY: 'Belarus',
   BZ: 'Belize',
   CA: 'Canada',
-  CC: 'Cocos [Keeling] Islands',
+  CC: 'Cocos Keeling Islands',
   CD: 'Congo',
   CF: 'Central African Republic',
   CG: 'Republic of the Congo',
