@@ -56,7 +56,7 @@ function getName (code, locale = 'EN') {
 // getCode returns the code for that country given the country name.
 function getCode (name, locale = 'EN') {
   const loc = locale.toUpperCase()
-  const n = name.toUpperCase()
+  const n = name
   switch (loc) {
     case 'DE':
       return getNameListDE()[n]
