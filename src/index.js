@@ -1,3 +1,4 @@
+import codeToPhone from './map-code-phone'
 import getCodeListDE from './de/map-code-name'
 import getCodeListEN from './en/map-code-name'
 import getCodeListES from './es/map-code-name'
@@ -77,6 +78,11 @@ function getCode (name, locale = 'EN') {
     case 'ZHTW':
       return getNameListZHTW()[n]
   }
+}
+
+// getPhoneCode returns the phone code from a country code.
+function getPhoneCode (countryCode) {
+  return codeToPhone()[countryCode.toUpperCase()]
 }
 
 // getNames returns an array of all country names.
@@ -187,5 +193,6 @@ export {
   getNamesPTBR,
   getNamesRU,
   getNamesZHCN,
-  getNamesZHTW
+  getNamesZHTW,
+  getPhoneCode
 }
