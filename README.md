@@ -48,6 +48,10 @@ Expects the English country name.
 Returns the code for that country.  
 If not found, it returns `undefined`.  
 
+### getPhoneCode(code)
+
+Returns the phone code of a country code.
+
 ### getNames(locale)
 
 Returns an array of all country names.
