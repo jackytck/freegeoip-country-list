@@ -1,6 +1,6 @@
 {
   "name": "freegeoip-country-list",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Country list and its IOS country code mappings used in freegeoip.",
   "main": "lib/index.js",
   "repository": "https://github.com/jackytck/freegeoip-country-list",
