@@ -60,6 +60,10 @@ Returns an array of all country names.
 
 Returns an array of all country codes.
 
+### getPhoneCodes()
+
+Returns an array of all phone codes.
+
 ### getNameList(locale)
 
 Returns a key-value object of all countries using the name as key.

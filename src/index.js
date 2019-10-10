@@ -27,6 +27,7 @@ import getNamesPTBR from './ptbr/names'
 import getNamesRU from './ru/names'
 import getNamesZHCN from './zhcn/names'
 import getNamesZHTW from './zhtw/names'
+import getPhoneCodes from './phone-codes'
 
 // getName returns the name for that country from the 2-digits country code.
 function getName (code, locale = 'EN') {
@@ -194,5 +195,6 @@ export {
   getNamesRU,
   getNamesZHCN,
   getNamesZHTW,
-  getPhoneCode
+  getPhoneCode,
+  getPhoneCodes
 }
